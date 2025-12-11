@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: ".VnArial", SansSerif;
+  background-color: #eeeeee;
+}
+
+header {
+  background: #eeeeee;
+  color: orangered;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  background: white;
+  min-height: 350px;
+}
+
+.left {
+  width: 20%;
+  background: #eeeeee;
+  padding: 15px;
+}
+
+.video-item {
+  margin-bottom: 20px;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 120px;
+  border-radius: 6px;
+}
+
+.content {
+  width: 60%;
+  padding: 20px;
+}
+
+.main-video iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.right {
+  width: 20%;
+  padding: 20px;
+}
+
+
+  .ads img {
+    width: 60%;
+    height: auto;
+    border-radius: 40px;
+  }
+
+.footer {
+  background: #eeeeee;
+  color: black;
+  text-align: -moz-center;
+  padding: 80px;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  .video-item {
+    min-width: 45%;
+  }
+
+  .video-item iframe {
+    height: 100px;
+  }
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-video iframe {
+    height: 100px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .ads {
+    height: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .ads img {
+    max-width: 80px;
+  }
+}
+
+
